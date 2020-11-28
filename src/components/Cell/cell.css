@@ -1,0 +1,28 @@
+.cell {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rgb(245, 245, 245);
+	width: 40px;
+	height: 40px;
+	border: 1px solid rgb(200, 200, 200);
+	border-right: none;
+	border-bottom: none;
+	cursor: pointer;
+	font-size: 1.5rem;
+	color: darkslategray;
+}
+.cell.active {
+	background-color: rgb(200, 200, 200);
+	border: 1px solid darkslategray;
+}
+
+.prefilled {
+	background-color: rgb(53, 104, 104);
+	color: white;
+}
+.cell:not(.prefilled):hover {
+	box-shadow: 0 0 8px 0px rgb(200, 200, 200);
+	background-color: rgb(200, 200, 200);
+	border: 1px solid darkslategray;
+}
